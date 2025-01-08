@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            background-color: white;
+            border: 1px solid blue;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0px;
+            background-color: white;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <fieldset>
+                <legend><strong>Your message:</strong></legend>
+                <label for="to">To</label>
+                <input type="text" id="to" name="to" value="Example Cafe" readonly>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label for="file">Attach File</label>
+                <input type="file" id="file" name="file" class="file-input">
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>How you found us:</strong></legend>
+                <label for="source">How did you hear of us</label>
+                <select id="source" name="source">
+                    <option value="google">Google</option>
+                    <option value="friend">A Friend</option>
+                    <option value="socialmedia">Social Media</option>
+                    <option value="advertisement">Advertisement</option>
+                </select>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="newsletter" value="yes"> Ensure this box is checked if you would like to receive email updates
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="btn">
+                <input type="submit" value="Send message">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

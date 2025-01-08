@@ -5,10 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: #f5f7f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgb(134, 213, 236);
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            background-color: #00bfff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            color: black;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        
+        .tittle {
+            margin-left: 130px;
+        }
+        
+        .tittle1 {
+            margin-left: 90px;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            Jackson Electronics
+        </div>
+        <h2 class="tittle">Registration From</h2>
+        <p class="tittle1">Register your Jackson Electronics product here</p>
+        <form>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname"><br>
+            <label for="address1">Address #1:</label>
+            <input type="text" id="address1" name="address1"><br>
+            <label for="address2">Address #2:</label>
+            <input type="text" id="address2" name="address2"><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"><br>
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip"><br>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="us">United States</option>
+                
+            </select><br>
+            <hr>
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option value="scanmaster">ScanMaster</option>
+                <option value="printer">Printer</option>
+                <option value="monitor">Monitor</option>
+            </select><br>
 
+            <label for="date">Date Purchased:</label>
+            <input type="text" id="date" name="date"><br>
+
+            <label for="serial">Serial #:</label>
+            <input type="text" id="serial" name="serial"><br>
+
+            <label>Used for:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="usedfor" value="home"> Home</label>
+                <label><input type="radio" name="usedfor" value="business"> Business</label>
+                <label><input type="radio" name="usedfor" value="government"> Government</label>
+                <label><input type="radio" name="usedfor" value="education"> Educational Institution</label>
+                <label><input type="radio" name="usedfor" value="other"> Other</label>
+            </div>
+
+            <label>System:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="system" value="windows"> Windows</label>
+                <label><input type="checkbox" name="system" value="macintosh"> Macintosh</label>
+                <label><input type="checkbox" name="system" value="unix"> UNIX</label>
+                <label><input type="checkbox" name="system" value="other"> Other</label>
+            </div>
+
+            <label for="comments">Comments?:</label><br>
+            <textarea id="comments" name="comments" rows="4"></textarea><br>
+            <hr>
+
+            <div class="buttons">
+                <input type="submit" value="Click to register">
+                <input type="reset" value="Click to cancel">
+            </div>
+
+        </form>
+
+    </div>
 </body>
 
 </html>
